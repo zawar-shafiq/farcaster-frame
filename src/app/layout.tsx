@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Everlink",
     images: [
       {
-        url: "https://ibb.co/HDCtWrTh", // replace with your image URL
+        url: "https://i.ibb.co/qMCNtRYJ/calling-card-1.png", // replace with your image URL
         width: 1200,
         height: 630,
         alt: "Image description",
@@ -34,19 +34,15 @@ export const metadata: Metadata = {
 
   // Twitter metadata (optional, if you want to customize for Twitter)
   twitter: {
-    card: "summary_large_image",
-    site: "@YourTwitterHandle", // replace with your Twitter handle
-    title: "Everlink",
-    description: "A brief description of your website or app.",
+    title: 'Devigital Systems',
     images: [
-      {
-        url: "https://ibb.co/HDCtWrTh", // replace with your image URL
-        width: 1200,
-        height: 630,
-        alt: "Image description",
-      },
+        {
+            url: 'https://i.ibb.co/qMCNtRYJ/calling-card-1.png',
+            width: 1200,
+            height: 630,
+        },
     ],
-  },
+},
 };
 
 export default function RootLayout({
