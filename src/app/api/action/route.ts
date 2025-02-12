@@ -10,7 +10,10 @@ export async function GET(request: Request) {
         <meta property="og:title" content="Action Completed!" />
         <meta property="og:image" content="https://yourdomain.com/success.png" />
       </head>
-      <body></body>
+      <body>
+        <h1>Action Completed!</h1>
+        <p>You've clicked the button successfully.</p>
+      </body>
     </html>
   `, 
     { headers: { "Content-Type": "text/html" } }

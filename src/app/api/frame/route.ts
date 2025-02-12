@@ -11,7 +11,10 @@ export async function GET() {
         <meta property="fc:button:1" content="Click Me" />
         <meta property="fc:action:1" content="https://yourdomain.com/api/action" />
       </head>
-      <body></body>
+      <body>
+        <h1>This is a Dummy Farcaster Frame</h1>
+        <p>Click the button below to trigger an action.</p>
+      </body>
     </html>
   `, 
     { headers: { "Content-Type": "text/html" } }
