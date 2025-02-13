@@ -1,10 +1,21 @@
 "use client";
 
 export default function ShareToFarcaster() {
+
+  const farcasterId = '845261';
+
   const shareToWarpcast = () => {
-    const url = "https://arweave.4everland.xyz/FlzsEY5W-XhZFrUUKYS97Y47J7EwyVqXHMx6oA9G15s"; // Replace with your Arweave link
-    const text = encodeURIComponent(`Check this out: ${url}`);
-    window.open(`https://warpcast.com/compose?text=${text}`, "_blank");
+    // const arweaveUrl = "https://arweave.4everland.xyz/FlzsEY5W-XhZFrUUKYS97Y47J7EwyVqXHMx6oA9G15s";
+    // const imageUrl = "https://i.ibb.co/qMCNtRYJ/calling-card-1.png";
+    // const text = encodeURIComponent(`Check this out: ${arweaveUrl}`);
+    // const shareUrl = `https://warpcast.com/~/compose?text=${text}&fid=${farcasterId}`;
+    // const shareUrl = `https://warpcast.com/~/compose?&media=${imageUrl}&fid=${farcasterId}`;
+
+    const arweaveUrl = encodeURIComponent("https://arweave.4everland.xyz/FlzsEY5W-XhZFrUUKYS97Y47J7EwyVqXHMx6oA9G15s");
+    const imageUrl = encodeURIComponent("https://i.ibb.co/qMCNtRYJ/calling-card-1.png");
+    const shareUrl = `https://warpcast.com/~/compose?text=${arweaveUrl}&media=${imageUrl}&embeds[]=${imageUrl}`;
+    console.log("Opening Warpcast URL:", shareUrl);
+    window.open(shareUrl, "_blank");
   };
 
   return (
