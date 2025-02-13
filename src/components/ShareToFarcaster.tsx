@@ -2,7 +2,7 @@
 
 export default function ShareToFarcaster() {
   const shareToWarpcast = () => {
-    const url = "https://arweave.net/YOUR_PAGE_ID"; // Replace with your Arweave link
+    const url = "https://arweave.4everland.xyz/FlzsEY5W-XhZFrUUKYS97Y47J7EwyVqXHMx6oA9G15s"; // Replace with your Arweave link
     const text = encodeURIComponent(`Check this out: ${url}`);
     window.open(`https://warpcast.com/compose?text=${text}`, "_blank");
   };
